@@ -12,7 +12,7 @@ import (
 const colorClear = "\033[H\033[2J"
 
 func main() {
-	
+
 	accounts := []account.Account{
 		&account.FirstAccount{},
 		&account.SecondAccount{},
@@ -76,3 +76,5 @@ func Btoi(b bool) int {
 	}
 	return 0
 }
+
+// test
