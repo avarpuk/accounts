@@ -18,5 +18,8 @@ func (c *SecondAccount) ChangeAge(newAge int) string {
 }
 
 func (c *SecondAccount) GetAccount() {
+	if len(c.Name) == 0 {
+		c.Name = "N/A"
+	}
 	fmt.Printf("Second Account: [Name: %s, Age: %v]", c.Name, c.Age)
 }
